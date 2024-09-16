@@ -36,9 +36,6 @@ Wag’, ‘Ford Pantera L’ and ‘Honda Civic’ have.
 
 ### **PROBLEM 1**
 
-![PA3-1 1](https://github.com/user-attachments/assets/23697162-9d78-4067-87f7-a9210861339f)
-![PA3-1 2 (2)](https://github.com/user-attachments/assets/9ef5d6aa-288a-4be8-8bd8-aa688d46021a)
-
 Step 1: Import the Pandas Library - I began by importing the pandas library to load and manipulate the datase which is the ‘import pandas as pd’. This is a necessary step to utilize the ‘read_csv’ function, which reads CSV files into pandas DataFrames.
 
 Step 2:  Load the CSV File into a DataFrame - Using the ‘pd.read_csv()’ function, I loaded the 'cars.csv' file into a pandas DataFrame named cars. This function reads the contents of the CSV file and stores the data in a structured tabular format.
@@ -50,10 +47,6 @@ Step 4: Display the Last Five Rows - To view the last five rows of the dataset, 
 
 
 ### **PROBLEM 2**
-
-![PA3-2 1](https://github.com/user-attachments/assets/7df97cea-9a23-4029-98f2-d10ff3494e1e)
-![PA3-2 2](https://github.com/user-attachments/assets/435bfc5e-7987-4de0-8b6b-07441fa78e74)
-![PA3-2 3 (2)](https://github.com/user-attachments/assets/b9e5b363-5ac9-46e5-9b19-a6f16cab0ba6)
 
 Step 1: Assign DataFrame to a Variable - I assigned the DataFrame cars from Problem 1 to a new variable c to simplify referencing it in further operations.
 
