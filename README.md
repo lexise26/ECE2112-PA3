@@ -40,10 +40,16 @@ Step 1: Import the Pandas Library - I began by importing the pandas library to l
 
 Step 2:  Load the CSV File into a DataFrame - Using the ‘pd.read_csv()’ function, I loaded the 'cars.csv' file into a pandas DataFrame named cars. This function reads the contents of the CSV file and stores the data in a structured tabular format.
 
+    cars = pd.read_csv('cars.csv')
+    cars
+
 Step 3: Display the First Five Rows - To view the first five rows of the dataset, I used the 'cars.head(5)' method. This is useful to quickly view the top entries of the DataFrame and ensure that the data was loaded correctly.
+
+    cars.head(5)
 
 Step 4: Display the Last Five Rows - To view the last five rows of the dataset, I used the 'cars.tail(5)' method. This helps verify the structure of the dataset by viewing the bottom rows, ensuring the data has been correctly read.
 
+    cars.tail(5)
 
 
 ### **PROBLEM 2**
@@ -52,11 +58,19 @@ Step 1: Assign DataFrame to a Variable - I assigned the DataFrame cars from Prob
 
 Step 2: Display the First Five Rows with Odd-Numbered Columns - To display the first five rows and select only the odd-numbered columns (1, 3, 5, 7...), I used the ‘.iloc[]’ function. The first argument [0,1,2,3,4] selects the first five rows, and the second argument [1,3,5,7,9,11] selects the odd-numbered columns based on their index positions (starting from 0).
 
+    c.iloc[[0,1,2,3,4],[1,3,5,7,9,11]]
+
 Step 3: Display the Row for the Car Model 'Mazda RX4' - I used the ‘.loc[]’ function to find the row where the 'Model' column has the value 'Mazda RX4'. This returns all the details for the row matching that condition.
+
+    c[c['Model']=='Mazda RX4']
 
 Step 4: Find the Number of Cylinders ('cyl') for the Car Model 'Camaro Z28' - I filtered the DataFrame using ‘.loc[]’ to find the 'Model' 'Camaro Z28'. I then selected only the 'Model' and 'cyl' columns to display how many cylinders the Camaro Z28 has.
 
+    c.loc[(c['Model']=='Camaro Z28'), ['Model', 'cyl']]
+
 Step 5: Determine Cylinders ('cyl') and Gear Type ('gear') for Specific Car Models - I used the ‘.loc[]’ function to filter the rows for the models 'Mazda RX4 Wag', 'Ford Pantera L', and 'Honda Civic' by combining conditions with the | (OR) operator. I then selected the 'Model', 'cyl', and 'gear' columns to display the relevant information.
+
+    c.loc[(c['Model']=='Mazda RX4 Wag') | (c['Model']=='Ford Pantera L') | (c['Model']=='Honda Civic'), ['Model', 'cyl', 'gear']]
 
 ## Conclusion
 
